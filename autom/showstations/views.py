@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 def index(request):
     my_dict = {'insert_here':"From views.py..."}
-    return render(request, 'index.html', context=my_dict)
+    return render(request, 'showstations/index.html', context=my_dict)

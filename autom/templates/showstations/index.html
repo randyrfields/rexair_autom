@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% load static %}
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -17,11 +19,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <h1>System Setup</h1>
+        <img src="{% static 'images/beach.jpg' %}" alt="Bad link">
         <script src="" async defer></script>
         <label for="station_type">Station 1:</label>
         <select name="station_type" id="station_type">
             <option value="banner">Banner Sensors</option>
             <option value="tof">Time of Flight</option>
         </select>
+        {{ insert_here }}
     </body>
 </html>
